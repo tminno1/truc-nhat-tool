@@ -1,0 +1,12 @@
+{
+  "name": "truc-nhat-tool",
+  "version": "1.0.0",
+  "description": "Tool chia trực nhật lớp học",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

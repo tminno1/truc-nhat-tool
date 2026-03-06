@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+
+<meta charset="UTF-8">
+<title>Tool chia trực nhật</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+</head>
+
+<body>
+
+<h1>📋 Tool chia trực nhật</h1>
+
+<button onclick="toggleDark()">🌙 Dark mode</button>
+
+<h2>Danh sách trực trong lớp</h2>
+
+<textarea id="inNames"></textarea>
+
+<h2>Danh sách trực ngoài lớp</h2>
+
+<textarea id="outNames"></textarea>
+
+<h2>Công việc</h2>
+
+<label>Quét lớp</label>
+<input id="quet" type="number" value="2">
+
+<label>Lau bảng</label>
+<input id="lau" type="number" value="2">
+
+<label>Đổ rác</label>
+<input id="rac" type="number" value="1">
+
+<label>Lau lớp thứ 6</label>
+<input id="laulop" type="number" value="2">
+
+<h2>Chọn ngày trực</h2>
+
+<table>
+
+<tr>
+<th>Thứ</th>
+<th>Sáng</th>
+<th>Chiều</th>
+<th>Ngoài</th>
+</tr>
+
+<tbody id="dayTable"></tbody>
+
+</table>
+
+<h2>Trực ngoài lớp mỗi ngày</h2>
+
+<input id="outCount" type="number" value="2">
+
+<br><br>
+
+<button onclick="generate()">Tạo lịch</button>
+
+<button onclick="exportPDF()">Xuất PDF</button>
+
+<div id="result"></div>
+
+<div id="stats"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
